@@ -10,14 +10,13 @@
     <div style="height: 800px; width: 1px; min-width: 100%;">
       <iframe id="jane-menu" frameborder="0" height="100%" style="width: 1px; min-width: 100%;" src="https://www.iheartjane.com/embedded/stores/27/menu">
       </iframe>
+      <script>
+        var iframe = document.getElementById('jane-menu')
+        var isMobile = /Mobi/.test(window.navigator.userAgent)
+        if (isMobile) {
+          iframe.setAttribute('scrolling', 'no')
+        }
+      </script>
     </div>
-    <script>
-      var iframe = document.getElementById('jane-menu')
-      var isMobile = /Mobi/.test(window.navigator.userAgent)
-      if (isMobile) {
-        console.log(iframe)
-        iframe.setAttribute('scrolling', 'no')
-      }
-    </script>
   </body>
 </html>
