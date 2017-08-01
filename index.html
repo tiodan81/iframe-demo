@@ -20,9 +20,8 @@
     </div>
     <script>
       var p = document.getElementById('width')
-      var innerWidth = window.innerWidth
-      console.log(p, innerWidth)
-      p.textContent = innerWidth
+      var isMobile = /Mobi/.test(window.navigator.userAgent)
+      p.textContent = 'is mobile: ' + isMobile
     </script>
   </body>
 </html>
