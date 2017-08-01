@@ -24,7 +24,8 @@
       var isMobile = /Mobi/.test(window.navigator.userAgent)
       p.textContent = 'is mobile: ' + isMobile
       if (isMobile) {
-        iframe.style.scrolling = 'no'
+        console.log(iframe)
+        iframe.style.overflow = 'hidden'
       }
     </script>
   </body>
