@@ -5,24 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
   </head>
-  <style>
-    iframe {
-      width: 1px;
-      min-width: 100%;
-    }
-  </style>
   <body>
     <h1>hEloo!</h1>
-    <p id="width"></p>
     <div style="height: 800px; width: 1px; min-width: 100%;">
       <iframe id="jane-menu" frameborder="0" height="100%" src="https://www.iheartjane.com/embedded/stores/27/menu">
       </iframe>
     </div>
     <script>
-      var p = document.getElementById('width')
       var iframe = document.getElementById('jane-menu')
       var isMobile = /Mobi/.test(window.navigator.userAgent)
-      p.textContent = 'is mobile: ' + isMobile
       if (isMobile) {
         console.log(iframe)
         iframe.setAttribute('scrolling', 'no')
