@@ -20,9 +20,11 @@
     </div>
     <script>
       var p = document.getElementById('width')
+      var iframe = document.getElementById('jane-menu')
       var innerWidth = window.innerWidth
       console.log(p, innerWidth)
       p.textContent = innerWidth
+      iframe.style.minWidth = innerWidth + 'px'
     </script>
   </body>
 </html>
