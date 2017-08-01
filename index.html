@@ -20,8 +20,12 @@
     </div>
     <script>
       var p = document.getElementById('width')
+      var iframe = document.getElementById('jane-menu')
       var isMobile = /Mobi/.test(window.navigator.userAgent)
       p.textContent = 'is mobile: ' + isMobile
+      if (isMobile) {
+        iframe.style.scrolling = 'no'
+      }
     </script>
   </body>
 </html>
